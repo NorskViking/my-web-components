@@ -8,23 +8,61 @@
         <script src="main.js" defer></script>
     </head>
     <body>
-        <h1>My Web Components</h1>
-        <p>This is a collection of predefined, accessible web components I've created, that are available for use in different projects</p>
-        <article>
-            The main focus for the components, are that they shall follow WCAG-standards for accessibility, and be predefined with WAI-ARIA labels where needed.
-            For this project, I'm also aiming for a few different styles, that the components can be sorted by. For the styles, I'm looking for "glassy"-look,
-            skeumorphism, 
-        </article>
-        <h2>ToDo:</h2>
-        <ul>
-            <li>[ ] Create a wireframe for the website</li>
-            <li>[ ] Create the base website for the components</li>
-            <li>[ ] Create styled buttons</li>
-            <li>[ ] Create styled radio-buttons</li>
-            <li>[ ] Create styled login-forms</li>
-            <li>[ ] Create styled card-components</li>
-            <li>[ ] Create styled dropdowns</li>
-            <li>[ ] Other components?</li>
-        </ul>
+    <!-- TODO -->
+    <!--
+    *** [ ] Create the outline of the website based on the wireframes.
+    *** [ ] Implement the global styling for the website.
+    *** [ ] Develop and add the components.
+    *** [ ] Make the components easily accessible.
+    -->
+
+        <!-- NAVBAR -->
+        <header>
+            <nav class="top-nav" aria-label="Main navigation">
+                <a href="/" class="logo">UI-Lib</a>
+            </nav>
+        </header>
+
+        <!-- SIDEBAR-->
+        <aside id="sidebar" aria-label="Sidebar navigation">
+            <nav aria-label="Component types">
+                <ul>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#radio-buttons">Radio buttons</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#checkboxes">Checkboxes</a></li>
+                    <li><a href="#toggle-switches">Toggle switches</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- PAGE CONTENT -->
+        <main>
+            <!-- <a> TODO: add sorting filtering here </a> -->
+            <section id="buttons" aria-labelledby="buttons-heading">
+                <h2 id="buttons-heading">Buttons</h2>
+            </section>
+            <section id="radio-buttons" aria-labelledby="radio-buttons-heading">
+                <h2 id="radio-buttons-heading">Radio buttons</h2>
+            </section>
+            <section id="cards" aria-labelledby="cards-heading">
+                <h2 id="cards-heading">Cards</h2>
+            </section>
+            <section id="forms" aria-labelledby="forms-heading">
+                <h2 id="forms-heading">Forms</h2>
+            </section>
+            <section id="checkboxes" aria-labelledby="checkboxes-heading">
+                <h2 id="checkboxes-heading">Checkboxes</h2>
+            </section>
+            <section id="toggle-switches" aria-labelledby="toggle-switches-heading">
+                <h2 id="toggle-switches-heading">Toggle Switches</h2>
+            </section>
+        </main>
+
+        <!-- FOOTER-->
+        <footer>
+            <p>&copy; 2024 My UI-component Library</p>
+        </footer>
     </body>
 </html>
